@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FI Africa Feedback - HL Agro</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+    }
+    h2 {
+      color: #1b5e20;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .checkbox-group label {
+      width: auto;
+      display: flex;
+      align-items: center;
+    }
+    .submit-button {
+      margin-top: 20px;
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .submit-button:hover {
+      background-color: #1b5e20;
+    }
+  </style>
+</head>
+<body>
+  <h2>FI Africa 2025 Visitor Feedback Form</h2>
+  <form action="#" method="post" enctype="multipart/form-data">
+    <label for="name">Name *</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="designation">Designation *</label>
+    <input type="text" id="designation" name="designation" required />
+
+    <label for="company">Company Name *</label>
+    <input type="text" id="company" name="company" required />
+
+    <label for="phone">Phone Number *</label>
+    <input type="tel" id="phone" name="phone" required />
+
+    <label for="email">Email ID *</label>
+    <input type="email" id="email" name="email" required />
+
+    <label>Product(s) of Interest *</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="products" value="Sesame Seeds" /> Sesame Seeds</label>
+      <label><input type="checkbox" name="products" value="Corn Starch" /> Corn Starch</label>
+      <label><input type="checkbox" name="products" value="Liquid Glucose" /> Liquid Glucose</label>
+      <label><input type="checkbox" name="products" value="High Maltose Syrup" /> High Maltose Syrup</label>
+      <label><input type="checkbox" name="products" value="Tapioca Starch" /> Tapioca Starch</label>
+      <label><input type="checkbox" name="products" value="Native Starch" /> Native Starch</label>
+      <label><input type="checkbox" name="products" value="Modified Starch" /> Modified Starch</label>
+      <label><input type="checkbox" name="products" value="Others" /> Others</label>
+    </div>
+
+    <label for="experience">Booth Experience Rating (1-5)</label>
+    <select id="experience" name="experience">
+      <option value="">Select Rating</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+
+    <label for="comments">Comments / Suggestions</label>
+    <textarea id="comments" name="comments" rows="4"></textarea>
+
+    <label for="visiting_card">Upload Your Visiting Card (Image only)</label>
+    <input type="file" id="visiting_card" name="visiting_card" accept="image/*" />
+
+    <label>Would you like to receive product updates?</label>
+    <select name="marketing_consent">
+      <option value="">Select</option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+
+    <button class="submit-button" type="submit">Submit</button>
+  </form>
+</body>
+</html>
